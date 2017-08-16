@@ -25,6 +25,10 @@ app.get('/user/:name', (req, res) =>{
   res.render('profile', {user: targetUser});
 });
 
+app.get('/request', (req, res) =>{
+  res.render('request'); 
+});
+
 // app.get('/user/:job', (req, res) => {
 //   let userJob = req.params.job;
 //   let targetJob;
