@@ -8,7 +8,7 @@
   <img class="profPic" src="{{ user.avatar }}">
   <div class="userProfInfo">
 
-    <h1 class="name">{{ user.name }}</h1>
+    <h1 class="name profName">{{ user.name }}</h1>
     {{#if user.address.city }}
     <h4 class="firstLine">{{ user.address.city }},  {{ user.address.country }} |</h4>
     {{else}}
