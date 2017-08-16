@@ -1,0 +1,15 @@
+<h1>Directory</h1>
+  <div class="container">
+    {{#each bots.users}}
+      <div class="user">
+        <img class="userAvatar" src="{{avatar}}">
+        <a class="name-link" href="/user/{{name}}"><h2 class="name">{{name}}</h2></a>
+        <h3>{{company}}</h3>
+        {{#if job}}
+        <h4>{{job}}</h4>
+        {{else}}
+        <h4>Actively Seeking Employment</h4>
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
